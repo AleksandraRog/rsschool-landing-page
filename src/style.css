@@ -1,0 +1,971 @@
+.d-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 20px 0px 40px;
+  position: relative;
+  background-color: var(--backgroundpage);
+}
+
+.d-home .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.d-home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .header-menu {
+  display: flex;
+  max-width: 1360px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .logo {
+  position: relative;
+  width: 100px;
+  height: 60px;
+}
+
+.d-home .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.d-home .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .link {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--textdark);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.d-home .line {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin-bottom: -1px;
+}
+
+.d-home .coffee-menu {
+  position: relative;
+  width: 44px;
+  height: 28px;
+}
+
+.d-home .header-actions {
+  display: inline-flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .theme-switch {
+  display: flex;
+  width: 88px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid;
+  border-color: var(--borderprimary);
+}
+
+.d-home .light {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1px;
+  position: relative;
+  background-color: var(--textaccent);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.d-home .sun {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.d-home .dark {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.d-home .moon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.d-home .menu-item-wrapper {
+  display: inline-flex;
+  height: 28px;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.d-home .container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .container-2 {
+  position: relative;
+  max-width: 1360px;
+  width: 100%;
+  flex: 0 0 auto;
+  object-fit: cover;
+}
+
+.d-home .container-3 {
+  display: flex;
+  flex-direction: column;
+  max-width: 1360px;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .choose-your-favorite {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 75px;
+}
+
+.d-home .span {
+  font-weight: var(--desktop-heading-heading-2-font-weight);
+  color: #403f3d;
+  font-family: var(--desktop-heading-heading-2-font-family);
+  font-style: var(--desktop-heading-heading-2-font-style);
+  letter-spacing: var(--desktop-heading-heading-2-letter-spacing);
+  line-height: var(--desktop-heading-heading-2-line-height);
+  font-size: var(--desktop-heading-heading-2-font-size);
+}
+
+.d-home .text-wrapper-2 {
+  font-family: var(--desktop-heading-heading-2-accent-font-family);
+  font-weight: var(--desktop-heading-heading-2-accent-font-weight);
+  font-style: var(--desktop-heading-heading-2-accent-font-style);
+  color: #b0907a;
+  letter-spacing: var(--desktop-heading-heading-2-accent-letter-spacing);
+  line-height: var(--desktop-heading-heading-2-accent-line-height);
+  font-size: var(--desktop-heading-heading-2-accent-font-size);
+}
+
+.d-home .d-slider {
+  display: flex;
+  flex-direction: column;
+  width: 1360px;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .button-icon-dark {
+  border-color: var(--borderinverse);
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid;
+}
+
+.d-home .img-2 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.d-home .row-slider {
+  position: relative;
+  flex: 1;
+  min-width: 480px;
+  max-width: 1152px;
+  flex-grow: 1;
+  height: 640px;
+  overflow: hidden;
+}
+
+.d-home .slide {
+  max-width: 1152px;
+  left: calc(50.00% + 1728px);
+  display: flex;
+  flex-direction: column;
+  width: 1152px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.d-home .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .coffee-slider {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.d-home .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--desktop-heading-heading-3-font-family);
+  font-weight: var(--desktop-heading-heading-3-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-heading-heading-3-font-size);
+  text-align: center;
+  letter-spacing: var(--desktop-heading-heading-3-letter-spacing);
+  line-height: var(--desktop-heading-heading-3-line-height);
+  font-style: var(--desktop-heading-heading-3-font-style);
+}
+
+.d-home .p {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--desktop-body-medium-font-family);
+  font-weight: var(--desktop-body-medium-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-body-medium-font-size);
+  text-align: center;
+  letter-spacing: var(--desktop-body-medium-letter-spacing);
+  line-height: var(--desktop-body-medium-line-height);
+  font-style: var(--desktop-body-medium-font-style);
+}
+
+.d-home .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--desktop-heading-heading-3-font-family);
+  font-weight: var(--desktop-heading-heading-3-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-heading-heading-3-font-size);
+  text-align: center;
+  letter-spacing: var(--desktop-heading-heading-3-letter-spacing);
+  line-height: var(--desktop-heading-heading-3-line-height);
+  font-style: var(--desktop-heading-heading-3-font-style);
+}
+
+.d-home .content-wrapper {
+  max-width: 1152px;
+  left: calc(50.00% + 576px);
+  display: flex;
+  flex-direction: column;
+  width: 1152px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.d-home .content-2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  width: 480px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .div-wrapper {
+  max-width: 1162px;
+  left: calc(50.00% - 576px);
+  display: flex;
+  flex-direction: column;
+  width: 1152px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.d-home .controls {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .control {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background-color: var(--borderinverse);
+  border-radius: 100px;
+}
+
+.d-home .control-2 {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background-color: var(--borderprimary);
+  border-radius: 100px;
+}
+
+.d-home .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .div-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 75px;
+}
+
+.d-home .images {
+  display: flex;
+  max-width: 1360px;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .column {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .box {
+  position: relative;
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url(./img/about-4-3.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.d-home .about-2 {
+  position: absolute;
+  top: calc(50.00% - 295px);
+  left: calc(50.00% - 330px);
+  width: 660px;
+  height: 590px;
+  object-fit: cover;
+}
+
+.d-home .box-2 {
+  height: 430px;
+  overflow: hidden;
+  position: relative;
+  width: 660px;
+  border-radius: 20px;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.d-home .about-3 {
+  position: absolute;
+  top: calc(50.00% - 215px);
+  left: calc(50.00% - 330px);
+  width: 660px;
+  height: 430px;
+  object-fit: cover;
+}
+
+.d-home .about-wrapper {
+  height: 430px;
+  overflow: hidden;
+  position: relative;
+  width: 660px;
+  border-radius: 20px;
+  background-image: url(./img/about-4.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.d-home .box-3 {
+  height: 590px;
+  position: relative;
+  width: 660px;
+  border-radius: 20px;
+  background-image: url(./img/about-4-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.d-home .mobile-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.d-home .container-4 {
+  display: flex;
+  max-width: 1360px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.d-home .offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.d-home .download-our-app-to {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 131.59px;
+}
+
+.d-home .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--desktop-body-medium-font-family);
+  font-weight: var(--desktop-body-medium-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-body-medium-font-size);
+  letter-spacing: var(--desktop-body-medium-letter-spacing);
+  line-height: var(--desktop-body-medium-line-height);
+  font-style: var(--desktop-body-medium-font-style);
+}
+
+.d-home .buttons {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .div-3 {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid;
+  border-color: var(--borderinverse);
+}
+
+.d-home .icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+.d-home .icon-2 {
+  position: relative;
+  width: 73.36%;
+  height: 87.91%;
+  top: 5.00%;
+  left: 12.91%;
+  background-image: url(./img/vector.svg);
+  background-size: 100% 100%;
+}
+
+.d-home .text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--desktop-body-caption-font-family);
+  font-weight: var(--desktop-body-caption-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-body-caption-font-size);
+  text-align: center;
+  letter-spacing: var(--desktop-body-caption-letter-spacing);
+  line-height: var(--desktop-body-caption-line-height);
+  white-space: nowrap;
+  font-style: var(--desktop-body-caption-font-style);
+}
+
+.d-home .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--desktop-action-link-button-font-family);
+  font-weight: var(--desktop-action-link-button-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-action-link-button-font-size);
+  letter-spacing: var(--desktop-action-link-button-letter-spacing);
+  line-height: var(--desktop-action-link-button-line-height);
+  white-space: nowrap;
+  font-style: var(--desktop-action-link-button-font-style);
+}
+
+.d-home .mobile-screens {
+  position: relative;
+  width: 630px;
+  height: 630px;
+  object-fit: cover;
+}
+
+.d-home .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.d-home .container-5 {
+  display: flex;
+  max-width: 1360px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--backgroundcontainer);
+  border-radius: 40px;
+}
+
+.d-home .div-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.d-home .text-wrapper-8 {
+  font-weight: var(--desktop-heading-heading-2-font-weight);
+  color: #e1d4c9;
+  font-family: var(--desktop-heading-heading-2-font-family);
+  font-style: var(--desktop-heading-heading-2-font-style);
+  letter-spacing: var(--desktop-heading-heading-2-letter-spacing);
+  line-height: var(--desktop-heading-heading-2-line-height);
+  font-size: var(--desktop-heading-heading-2-font-size);
+}
+
+.d-home .socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .button-icon-light {
+  border-color: var(--borderprimary);
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid;
+}
+
+.d-home .text-wrapper-9 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--desktop-heading-heading-3-font-family);
+  font-weight: var(--desktop-heading-heading-3-font-weight);
+  color: var(--textinverse);
+  font-size: var(--desktop-heading-heading-3-font-size);
+  letter-spacing: var(--desktop-heading-heading-3-letter-spacing);
+  line-height: var(--desktop-heading-heading-3-line-height);
+  font-style: var(--desktop-heading-heading-3-font-style);
+}
+
+.d-home .contacts-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.d-home .text-wrapper-10 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--desktop-action-link-button-font-family);
+  font-weight: var(--desktop-action-link-button-font-weight);
+  color: var(--textinverse);
+  font-size: var(--desktop-action-link-button-font-size);
+  letter-spacing: var(--desktop-action-link-button-letter-spacing);
+  line-height: var(--desktop-action-link-button-line-height);
+  white-space: nowrap;
+  font-style: var(--desktop-action-link-button-font-style);
+}
+/* Inject the following rules after the original CSS code. */
+
+.d-home a {
+  color: inherit;
+}
+
+.d-home button,
+.d-home .theme-switch,
+.d-home .control,
+.d-home .control-2 {
+  appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.d-home .theme-switch {
+  background-color: transparent;
+  padding: 4px;
+}
+
+.d-home .button-icon-dark,
+.d-home .button-icon-light {
+  background-color: transparent;
+  padding: 0;
+}
+
+.d-home .control,
+.d-home .control-2 {
+  border: 0;
+  padding: 0;
+}
+
+.d-home .link,
+.d-home .div-3,
+.d-home .button-icon-dark,
+.d-home .button-icon-light,
+.d-home .theme-switch,
+.d-home .control,
+.d-home .control-2 {
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.d-home .link:hover,
+.d-home .div-3:hover,
+.d-home .button-icon-dark:hover,
+.d-home .button-icon-light:hover,
+.d-home .theme-switch:hover {
+  opacity: 0.8;
+}
+
+.d-home .link:focus-visible,
+.d-home .div-3:focus-visible,
+.d-home .button-icon-dark:focus-visible,
+.d-home .button-icon-light:focus-visible,
+.d-home .theme-switch:focus-visible,
+.d-home .control:focus-visible,
+.d-home .control-2:focus-visible {
+  outline: 2px solid var(--textaccent);
+  outline-offset: 4px;
+}
+
+.d-home .contacts-2 {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .d-home {
+    gap: 60px;
+    padding: 16px 0 24px;
+  }
+
+  .d-home .container,
+  .d-home .container-wrapper {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .d-home .header-menu {
+    gap: 16px;
+  }
+
+  .d-home .nav,
+  .d-home .coffee-menu,
+  .d-home .menu-item-wrapper {
+    display: none;
+  }
+
+  .d-home .logo {
+    width: 80px;
+    height: 48px;
+  }
+
+  .d-home .container-3,
+  .d-home .d-slider,
+  .d-home .images,
+  .d-home .container-4,
+  .d-home .container-5 {
+    max-width: 100%;
+  }
+
+  .d-home .choose-your-favorite,
+  .d-home .div-2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .d-home .span,
+  .d-home .text-wrapper-2,
+  .d-home .text-wrapper-8 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .d-home .d-slider {
+    width: 100%;
+  }
+
+  .d-home .slider {
+    gap: 12px;
+  }
+
+  .d-home .button-icon-dark {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+  }
+
+  .d-home .row-slider {
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .d-home .content,
+  .d-home .content-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .d-home .coffee-slider {
+    width: min(100%, 480px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .d-home .images {
+    gap: 16px;
+  }
+
+  .d-home .column {
+    width: calc(50% - 8px);
+    gap: 16px;
+  }
+
+  .d-home .box,
+  .d-home .box-2,
+  .d-home .about-wrapper,
+  .d-home .box-3 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .d-home .about-2,
+  .d-home .about-3 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .d-home .container-4,
+  .d-home .container-5 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .d-home .container-5 {
+    padding: 40px 24px;
+    border-radius: 24px;
+  }
+
+  .d-home .offer {
+    width: 100%;
+  }
+
+  .d-home .download-our-app-to {
+    height: auto;
+  }
+
+  .d-home .buttons {
+    flex-wrap: wrap;
+  }
+
+  .d-home .mobile-screens {
+    width: min(100%, 630px);
+    height: auto;
+  }
+}
