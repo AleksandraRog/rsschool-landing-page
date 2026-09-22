@@ -820,7 +820,8 @@
 }
 
 .d-home .button-3:hover .icon,
-.d-home .button-3:hover .icon .text,
+.d-home .button-3:hover .icon .text-wrapper-6,
+.d-home .button-3:hover .icon .text-wrapper-7,
 .d-home .button-icon-right:hover .img-2,
 .d-home .button-icon-left:hover .img-2 {
   filter: invert(87%) sepia(15%) saturate(188%) hue-rotate(346deg) brightness(100%) contrast(85%);
