@@ -24,50 +24,52 @@
               />
             </a>
             <nav class="nav" aria-label="Primary navigation">
-              <li class="div">
-                <a class="link" href="#favorite-coffee">
-                  <span class="text-wrapper">Favorite coffee</span>
-                </a>
-                <img
-                  class="line"
-                  src="img/line-3.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </li>
-              <li class="div">
-                <a class="link" href="#about">
-                  <span class="text-wrapper">About</span>
-                </a>
-                <img
-                  class="line"
-                  src="images/line-5.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </li>
-              <li class="div">
-                <a class="link" href="#mobile-app">
-                  <span class="text-wrapper">Mobile app</span>
-                </a>
-                <img
-                  class="line"
-                  src="images/line-4.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </li>
-              <div class="div">
-                <a class="link" href="#contact-us">
-                  <span class="text-wrapper">Contact us</span>
-                </a>
-                <img
-                  class="line"
-                  src="images/line-7.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
+              <ul class="nav">
+                <li class="div">
+                  <a class="link" href="#favorite-coffee">
+                    <span class="text-wrapper">Favorite coffee</span>
+                  </a>
+                  <img
+                    class="line"
+                    src="img/line-3.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="div">
+                  <a class="link" href="#about">
+                    <span class="text-wrapper">About</span>
+                  </a>
+                  <img
+                    class="line"
+                    src="images/line-5.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="div">
+                  <a class="link" href="#mobile-app">
+                    <span class="text-wrapper">Mobile app</span>
+                  </a>
+                  <img
+                    class="line"
+                    src="images/line-4.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="div">
+                  <a class="link" href="#contact-us">
+                    <span class="text-wrapper">Contact us</span>
+                  </a>
+                  <img
+                    class="line"
+                    src="images/line-7.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+              </ul>
             </nav>
             <div class="coffee-menu" aria-hidden="true"></div>
             <div class="header-actions">
@@ -235,7 +237,12 @@
                 </button>
                 <div class="row-slider" aria-live="polite">
                   <ul class="slider-list">
-                    <li class="item-slider">
+                    <li
+                      class="item-slider"
+                      id="slide-1"
+                      role="tabpanel"
+                      aria-labelledby="control-1"
+                    >
                       <article class="slide">
                         <div class="content-2">
                           <img
@@ -255,7 +262,12 @@
                         </div>
                       </article>
                     </li>
-                    <li class="item-slider">
+                    <li
+                      class="item-slider"
+                      id="slide-2"
+                      role="tabpanel"
+                      aria-labelledby="control-2"
+                    >
                       <article class="slide">
                         <div class="content-2">
                           <img
@@ -275,7 +287,12 @@
                         </div>
                       </article>
                     </li>
-                    <li class="item-slider">
+                    <li
+                      class="item-slider"
+                      id="slide-3"
+                      role="tabpanel"
+                      aria-labelledby="control-3"
+                    >
                       <article class="slide">
                         <div class="content">
                           <img
@@ -338,22 +355,28 @@
                   class="control"
                   type="button"
                   role="tab"
+                  id="control-1"
                   aria-label="Show Ice coffee"
                   aria-selected="true"
+                  aria-controls="slide-1"
                 ></button>
                 <button
                   class="control-2"
                   type="button"
                   role="tab"
+                  id="control-2"
                   aria-label="Show Caramel Macchiato"
                   aria-selected="false"
+                  aria-controls="slide-2"
                 ></button>
                 <button
                   class="control-2"
                   type="button"
                   role="tab"
+                  id="control-3"
                   aria-label="Show S’mores Frappuccino"
                   aria-selected="false"
+                  aria-controls="slide-3"
                 ></button>
               </div>
             </div>
