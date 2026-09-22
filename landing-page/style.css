@@ -169,7 +169,7 @@
   height: 44px;
   align-items: center;
   justify-content: center;
-  gap: 8px;.d-home .box-2
+  gap: 8px;
   padding: 4px;
   position: relative;
   border-radius: 100px;
@@ -179,7 +179,15 @@
 }
 
 .d-home .theme-switch:hover .dark {
-  background-color: var(--textinverse);
+  background-color: var(--textprimary);
+}
+
+[data-theme="dark"] .d-home .theme-switch:hover .dark {
+  background-color: var(--background-button-accent-inverse);
+}
+
+[data-theme="dark"] .d-home .theme-switch:hover .moon {
+  filter: none;
 }
 
 .d-home .light {
@@ -195,6 +203,10 @@
   border-radius: 100px;
   overflow: hidden;
   transition: outline 0.3s;
+}
+
+[data-theme="dark"] .d-home .theme-switch:hover .light {
+  background-color: var(--dark-bg-container);
 }
 
 .d-home .sun {
@@ -213,6 +225,7 @@
   background-color: var(--background-button-accent-inverse);
   border-radius: 100px;
   overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .d-home .menu-item-wrapper {
@@ -713,7 +726,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: 50% 50%;
-  transition: width 0.4s, height 0.4s
+  transition: width 0.4s, height 0.4s ease, background-size 0.3s ease;
 }
 
 .d-home .box-2 {
@@ -725,7 +738,7 @@
   background-size: cover;
   background-position: 50% 50%;
   opacity: 1;
-  transition: width 0.4s, height 0.4s, opacity 0.4s;
+  transition: width 0.4s, height 0.4s, opacity 0.4s ease, background-size 0.3s ease;
 }
 
 .box.about-1 {
@@ -744,9 +757,9 @@
   background-image: url(./images/about-4.jpg);
 }
 
-.d-home .box:hover ,
+.d-home .box:hover,
 .d-home .box-2:hover {
-
+    background-size: 110%;
 }
 
 .d-home .mobile-app {
@@ -827,12 +840,11 @@
 .d-home .button-icon-left:hover {
   background-color: var(--backgroundcontainer);
 }
-
+.d-home .theme-switch:hover .moon,
 .d-home .button-3:hover .icon,
 .d-home .button-icon-right:hover .img-2,
 .d-home .button-icon-left:hover .img-2 {
   filter: invert(87%) sepia(15%) saturate(188%) hue-rotate(346deg) brightness(100%) contrast(85%);
-  color: var(--textinverse);
 }
 
 .d-home .button-3:hover .text-wrapper-6,
