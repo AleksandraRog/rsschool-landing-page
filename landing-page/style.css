@@ -169,13 +169,17 @@
   height: 44px;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 8px;.d-home .box-2
   padding: 4px;
   position: relative;
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--borderprimary);
   transition: border-color 0.3s;
+}
+
+.d-home .theme-switch:hover .dark {
+  background-color: var(--textinverse);
 }
 
 .d-home .light {
@@ -725,19 +729,24 @@
 }
 
 .box.about-1 {
-    background-image: url(./images/about-1.jpg);
+  background-image: url(./images/about-1.jpg);
 }
 
 .box-2.about-2 {
-    background-image: url(./images/about-2.jpg);
+  background-image: url(./images/about-2.jpg);
 }
 
 .box-2.about-3 {
-    background-image: url(./images/about-3.jpg);
+  background-image: url(./images/about-3.jpg);
 }
 
 .box.about-4 {
-    background-image: url(./images/about-4.jpg);
+  background-image: url(./images/about-4.jpg);
+}
+
+.d-home .box:hover ,
+.d-home .box-2:hover {
+
 }
 
 .d-home .mobile-app {
@@ -820,11 +829,14 @@
 }
 
 .d-home .button-3:hover .icon,
-.d-home .button-3:hover .text-wrapper-6,
-.d-home .button-3:hover .text-wrapper-7,
 .d-home .button-icon-right:hover .img-2,
 .d-home .button-icon-left:hover .img-2 {
   filter: invert(87%) sepia(15%) saturate(188%) hue-rotate(346deg) brightness(100%) contrast(85%);
+  color: var(--textinverse);
+}
+
+.d-home .button-3:hover .text-wrapper-6,
+.d-home .button-3:hover .text-wrapper-7 {
   color: var(--textinverse);
 }
 
@@ -923,6 +935,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-self: stretch;
   justify-content: center;
   gap: 40px;
   position: relative;
