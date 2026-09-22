@@ -81,7 +81,7 @@ const renderItemPreview = async (product, item = undefined) => {
   title.textContent = product.name;
   description.textContent = product.description;
   price.textContent = '$' + product.price;
-  const imageSrc = `/images/${product.category}-${product.id}.png`;
+  const imageSrc = `images/${product.category}-${product.id}.png`;
   const newImg = await createImage(imageSrc);
   try {
     const newImg = await createImage(imageSrc);
