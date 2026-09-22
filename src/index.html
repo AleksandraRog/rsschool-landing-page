@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resource Coffee</title>
+    <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
@@ -12,13 +13,18 @@
   <body>
     <div class="d-home">
       <header class="header">
-        <div class="container">
+        <div class="d-container container">
           <div class="header-menu">
             <a href="#home" aria-label="Resource Coffee home">
               <img class="logo" src="images/logo.svg" alt="Resource Coffee" />
+              <img
+                class="logo-dark"
+                src="images/logo_dark.svg"
+                alt="Resource Coffee"
+              />
             </a>
             <nav class="nav" aria-label="Primary navigation">
-              <div class="div">
+              <li class="div">
                 <a class="link" href="#favorite-coffee">
                   <span class="text-wrapper">Favorite coffee</span>
                 </a>
@@ -28,8 +34,8 @@
                   alt=""
                   aria-hidden="true"
                 />
-              </div>
-              <div class="div">
+              </li>
+              <li class="div">
                 <a class="link" href="#about">
                   <span class="text-wrapper">About</span>
                 </a>
@@ -39,8 +45,8 @@
                   alt=""
                   aria-hidden="true"
                 />
-              </div>
-              <div class="div">
+              </li>
+              <li class="div">
                 <a class="link" href="#mobile-app">
                   <span class="text-wrapper">Mobile app</span>
                 </a>
@@ -50,7 +56,7 @@
                   alt=""
                   aria-hidden="true"
                 />
-              </div>
+              </li>
               <div class="div">
                 <a class="link" href="#contact-us">
                   <span class="text-wrapper">Contact us</span>
@@ -79,13 +85,19 @@
                 </span>
               </button>
               <div class="menu-item-wrapper">
-                <div class="div">
-                  <a class="link" href="#favorite-coffee">
+                <div class="div menu-link">
+                  <a class="link" href="#">
                     <span class="text-wrapper">Menu</span>
                     <img
-                      class="img"
+                      class="img icon-cup"
                       src="images/coffee-cup.svg"
-                      alt=""
+                      alt="Cup"
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="img icon-cup-dark"
+                      src="images/coffee-cup_dark.svg"
+                      alt="Cup"
                       aria-hidden="true"
                     />
                   </a>
@@ -96,30 +108,113 @@
                     aria-hidden="true"
                   />
                 </div>
+                <div data-state="default" class="button-icon-burger">
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container-wrapper" id="home">
-          <img
-            class="container-2"
-            src="img/container.png"
-            alt="Enjoy premium coffee at our charming cafe"
-          />
+        <div class="d-container container-2" id="home">
+          <div class="img-hero-wrapper">
+            <div class="hero">
+              <h1>
+                <em class="text-wrapper-14">Enjoy </em>
+                <span class="text-wrapper-15"
+                  >premium coffee at our charming cafe</span
+                >
+              </h1>
+              <p class="text-wrapper-11">
+                With its inviting atmosphere and delicious coffee options, the
+                Coffee House Resource is a popular destination for coffee lovers
+                and those seeking a warm and inviting space to enjoy their
+                favorite beverage.
+              </p>
+              <a class="button-2" href="#" aria-label="Menu">
+                <span class="text-wrapper-12">Menu</span>
+                <img
+                  class="icon"
+                  src="images/coffee-cup.svg"
+                  alt="Cup"
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
+
+            <img
+              class="img-hero"
+              src="images/img-hero.png"
+              alt="Enjoy premium coffee at our charming cafe"
+            />
+          </div>
+          <aside class="burger-nav">
+            <nav class="burger-menu">
+              <ul class="burger-menu-list">
+                <li class="favorite-coffee">
+                  <a class="link" href="#favorite-coffee">
+                    <span class="favoritecoffee_span text-wrapper-13"
+                      >Favorite coffee</span
+                    >
+                  </a>
+                </li>
+                <li class="about">
+                  <a class="link" href="#about">
+                    <span class="about_span text-wrapper-13">About</span>
+                  </a>
+                </li>
+                <li class="mobile-app">
+                  <a class="link" href="#mobile-app">
+                    <span class="mobileapp_span text-wrapper-13"
+                      >Mobile app</span
+                    >
+                  </a>
+                </li>
+                <li class="contact-us">
+                  <a class="link" href="#contact-us">
+                    <span class="contactus_span text-wrapper-13"
+                      >Contact us</span
+                    >
+                  </a>
+                </li>
+              </ul>
+              <ul class="burger-menu-list">
+                <li class="menu">
+                  <a class="link" href="#">
+                    <span class="text-wrapper-13">Menu</span>
+                    <div class="coffee-cup">
+                      <img
+                        class="icon-cup"
+                        src="images/coffee-cup.svg"
+                        alt="Cup"
+                        aria-hidden="true"
+                      />
+                      <img
+                        class="icon-cup-dark"
+                        src="images/coffee-cup_dark.svg"
+                        alt="Cup"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
         </div>
       </header>
-      <main>
+      <main class="main">
         <section
           class="container-wrapper"
           id="favorite-coffee"
           aria-labelledby="favorite-coffee-heading"
         >
-          <div class="container-3">
-            <h1 class="choose-your-favorite" id="favorite-coffee-heading">
+          <div class="d-container container-3">
+            <h2 class="choose-your-favorite" id="favorite-coffee-heading">
               <span class="span">Choose your </span>
-              <em class="text-wrapper-2">favorite</em>
+              <em class="text-wrapper-2">favorite </em>
               <span class="span"> coffee</span>
-            </h1>
+            </h2>
             <div
               class="d-slider"
               role="region"
@@ -127,73 +222,111 @@
             >
               <div class="slider">
                 <button
-                  class="button-icon-dark"
+                  class="button-icon-left"
                   type="button"
                   aria-label="Show previous coffee"
                 >
-                  <img class="img-2" src="img/arrow-left.svg" alt="" />
+                  <img class="img-2" src="images/arrow-left.svg" alt="" />
+                  <img
+                    class="img-2-dark"
+                    src="images/arrow-left_dark.svg"
+                    alt=""
+                  />
                 </button>
                 <div class="row-slider" aria-live="polite">
-                  <article class="slide">
-                    <div class="content">
-                      <img
-                        class="coffee-slider"
-                        src="images/coffee-slider-3.png"
-                        alt="Ice coffee"
-                      />
-                      <div class="description">
-                        <h2 class="text-wrapper-3">Ice coffee</h2>
-                        <p class="p">
-                          A popular summer drink that tones and invigorates.
-                          Prepared from coffee, milk and ice.
-                        </p>
-                        <p class="text-wrapper-4">$4.50</p>
-                      </div>
-                    </div>
-                  </article>
-                  <article class="content-wrapper">
-                    <div class="content-2">
-                      <img
-                        class="coffee-slider"
-                        src="images/coffee-slider-2.png"
-                        alt="Caramel Macchiato"
-                      />
-                      <div class="description">
-                        <h2 class="text-wrapper-3">Caramel Macchiato</h2>
-                        <p class="p">
-                          Fragrant and unique classic espresso with rich
-                          caramel-peanut syrup, with cream under whipped thick
-                          foam.
-                        </p>
-                        <p class="text-wrapper-4">$5.00</p>
-                      </div>
-                    </div>
-                  </article>
-                  <article class="div-wrapper">
-                    <div class="content-2">
-                      <img
-                        class="coffee-slider"
-                        src="images/coffee-slider-1.png"
-                        alt="S’mores Frappuccino"
-                      />
-                      <div class="description">
-                        <h2 class="text-wrapper-3">S’mores Frappuccino</h2>
-                        <p class="p">
-                          This new drink takes an espresso and mixes it with
-                          brown sugar and cinnamon before being topped with oat
-                          milk.
-                        </p>
-                        <p class="text-wrapper-4">$5.50</p>
-                      </div>
-                    </div>
-                  </article>
+                  <ul class="slider-list">
+                    <li class="item-slider">
+                      <article class="slide">
+                        <div class="content-2">
+                          <img
+                            class="coffee-slider"
+                            src="images/coffee-slider-1.png"
+                            alt="S’mores Frappuccino"
+                          />
+                          <div class="description">
+                            <h2 class="text-wrapper-3">S’mores Frappuccino</h2>
+                            <p class="p">
+                              This new drink takes an espresso and mixes it with
+                              brown sugar and cinnamon before being topped with
+                              oat milk.
+                            </p>
+                            <p class="text-wrapper-4">$5.50</p>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item-slider">
+                      <article class="slide">
+                        <div class="content-2">
+                          <img
+                            class="coffee-slider"
+                            src="images/coffee-slider-2.png"
+                            alt="Caramel Macchiato"
+                          />
+                          <div class="description">
+                            <h2 class="text-wrapper-3">Caramel Macchiato</h2>
+                            <p class="p">
+                              Fragrant and unique classic espresso with rich
+                              caramel-peanut syrup, with cream under whipped
+                              thick foam.
+                            </p>
+                            <p class="text-wrapper-4">$5.00</p>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item-slider">
+                      <article class="slide">
+                        <div class="content">
+                          <img
+                            class="coffee-slider"
+                            src="images/coffee-slider-3.png"
+                            alt="Ice coffee"
+                          />
+                          <div class="description">
+                            <h2 class="text-wrapper-3">Ice coffee</h2>
+                            <p class="p">
+                              A popular summer drink that tones and invigorates.
+                              Prepared from coffee, milk and ice.
+                            </p>
+                            <p class="text-wrapper-4">$4.50</p>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item-slider">
+                      <article class="slide">
+                        <div class="content-2">
+                          <img
+                            class="coffee-slider"
+                            src="images/coffee-slider-1.png"
+                            alt="S’mores Frappuccino"
+                          />
+                          <div class="description">
+                            <h2 class="text-wrapper-3">S’mores Frappuccino</h2>
+                            <p class="p">
+                              This new drink takes an espresso and mixes it with
+                              brown sugar and cinnamon before being topped with
+                              oat milk.
+                            </p>
+                            <p class="text-wrapper-4">$5.50</p>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
                 </div>
                 <button
-                  class="button-icon-dark"
+                  class="button-icon-right"
                   type="button"
                   aria-label="Show next coffee"
                 >
-                  <img class="img-2" src="img/arrow-right.svg" alt="" />
+                  <img class="img-2" src="images/arrow-right.svg" alt="" />
+                  <img
+                    class="img-2-dark"
+                    src="images/arrow-right_dark.svg"
+                    alt=""
+                  />
                 </button>
               </div>
               <div
@@ -227,10 +360,10 @@
           </div>
         </section>
         <section class="about" id="about" aria-labelledby="about-heading">
-          <div class="container-3">
+          <div class="d-container container-3">
             <h2 class="div-2" id="about-heading">
               <span class="span">Resource is </span>
-              <em class="text-wrapper-2">the perfect and cozy place</em>
+              <em class="text-wrapper-2">the perfect and cozy place </em>
               <span class="span">
                 where you can enjoy a variety of hot beverages, relax, catch up
                 with friends, or get some work done.</span
@@ -238,43 +371,13 @@
             </h2>
             <div class="images">
               <div class="column">
-                <div class="box">
-                  <img
-                    class="about-2"
-                    src="images/about-3-3.png"
-                    alt="Customer enjoying coffee at Resource"
-                  />
-                  <img
-                    class="about-2"
-                    src="images/about-1.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <div class="box-2">
-                  <img
-                    class="about-3"
-                    src="images/about-3.png"
-                    alt="Fresh coffee prepared at Resource"
-                  />
-                  <img
-                    class="about-3"
-                    src="images/about-2.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
+                <div class="box about-1"></div>
+                <div class="box-2 about-2"></div>
               </div>
               <div class="column">
-                <div class="about-wrapper">
-                  <img
-                    class="about-3"
-                    src="images/about-3-2.png"
-                    alt="Friends enjoying coffee together"
-                  />
-                </div>
+                <div class="box-2 about-3"></div>
                 <div
-                  class="box-3"
+                  class="box about-4"
                   role="img"
                   aria-label="Coffee served at Resource"
                 ></div>
@@ -287,40 +390,53 @@
           id="mobile-app"
           aria-labelledby="mobile-app-heading"
         >
-          <div class="container-4">
+          <div class="d-container container-4">
             <div class="offer">
-              <img
-                class="download-our-app-to"
-                id="mobile-app-heading"
-                src="images/download-our-app-to-start-ordering.png"
-                alt="Download our app to start ordering"
-              />
+              <h2 class="div-2" id="mobile-app-heading">
+                <em class="text-wrapper-2">Download </em>
+                <span class="span"> our apps to start ordering</span>
+              </h2>
               <p class="text-wrapper-5">
                 Download the Resource app today and experience the comfort of
                 ordering your favorite coffee from wherever you are
               </p>
               <div class="buttons">
                 <a
-                  class="div-3"
+                  class="button-3"
                   href="#"
                   aria-label="Download Resource Coffee on the App Store"
                 >
-                  <span class="icon" aria-hidden="true">
-                    <span class="icon-2"></span>
-                  </span>
+                  <img
+                    class="icon"
+                    src="images/icon_apple.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    class="icon-dark"
+                    src="images/icon_apple_dark.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
                   <span class="text">
                     <span class="text-wrapper-6">Available on the</span>
                     <span class="text-wrapper-7">App Store</span>
                   </span>
                 </a>
                 <a
-                  class="div-3"
+                  class="button-3"
                   href="#"
                   aria-label="Download Resource Coffee on Google Play"
                 >
                   <img
                     class="icon"
-                    src="images/icon.svg"
+                    src="images/icon_google.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    class="icon-dark"
+                    src="images/icon_google_dark.svg"
                     alt=""
                     aria-hidden="true"
                   />
@@ -340,7 +456,7 @@
         </section>
       </main>
       <footer class="contacts" id="contact-us">
-        <div class="container-5">
+        <div class="d-container container-5">
           <div class="div-4">
             <p class="div-2">
               <span class="text-wrapper-8">Sip, Savor, Smile. </span>
@@ -353,6 +469,7 @@
                 aria-label="Resource Coffee on Twitter"
               >
                 <img class="img-2" src="images/twitter.svg" alt="" />
+                <img class="img-2-dark" src="images/twitter_dark.svg" alt="" />
               </a>
               <a
                 class="button-icon-light"
@@ -360,6 +477,11 @@
                 aria-label="Resource Coffee on Instagram"
               >
                 <img class="img-2" src="images/instagram.svg" alt="" />
+                <img
+                  class="img-2-dark"
+                  src="images/instagram_dark.svg"
+                  alt=""
+                />
               </a>
               <a
                 class="button-icon-light"
@@ -367,6 +489,7 @@
                 aria-label="Resource Coffee on Facebook"
               >
                 <img class="img-2" src="images/facebook.svg" alt="" />
+                <img class="img-2-dark" src="images/facebook_dark.svg" alt="" />
               </a>
             </nav>
           </div>
