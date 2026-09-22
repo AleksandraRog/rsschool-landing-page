@@ -510,7 +510,6 @@
   position: relative;
   flex: 1;
   flex-grow: 1;
-  height: 640px;
   overflow: hidden;
 }
 
