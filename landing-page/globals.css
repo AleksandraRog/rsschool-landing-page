@@ -2,9 +2,11 @@
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0px;
   min-height: 100%;
 }
@@ -15,6 +17,16 @@ button:focus-visible {
 }
 a {
   text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 /* @FONTWARNING[{"type": "restricted", "family": "Inter-SemiBold", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
 
