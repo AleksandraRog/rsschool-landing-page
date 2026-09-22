@@ -230,8 +230,8 @@
 .d-home .icon-cup-dark {
   position: absolute;
   opacity: 0;
-  top: 50%;
-  left: 19%;
+  top: 48%;
+  left: 89%;
   transform: translate(-50%, -50%);
   transition: opacity 0.4s ease;
 }
@@ -294,7 +294,7 @@
     max-width: none;
     width: 100%;
     height: 100%;
-    object-fit: cover;    /* Растягивает картинку с сохранением пропорций */
+    object-fit: cover;
     object-position: center;
 }
 
@@ -321,8 +321,6 @@
   position: relative;
   background-color: var(--backgroundpage);
   border-radius: 100px;
-  /*border: 1px solid;
-  border-color: var(--borderinverse);*/
   transition: background-color 0.3s;
 }
 
@@ -490,7 +488,6 @@
 
 .d-home .img-2-dark,
 .d-home .img-2 {
-  /*position: relative;*/
   width: 24px;
   height: 24px;
 }
@@ -985,7 +982,6 @@
   font-style: var(--desktop-action-link-button-font-style);
   transition: color 0.3s;
 }
-/* Inject the following rules after the original CSS code. */
 
 .d-home a {
   color: inherit;
