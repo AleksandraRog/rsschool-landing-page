@@ -1056,15 +1056,6 @@
     border-color 0.2s ease;
 }
 
-.d-home .link:hover,
-.d-home .button-3:hover,
-.d-home .button-2:hover,
-.d-home .button-icon-dark:hover,
-.d-home .button-icon-light:hover,
-.d-home .theme-switch:hover {
-  opacity: 0.8;
-}
-
 .d-home .link:focus-visible,
 .d-home .button-3:focus-visible,
 .d-home .button-2:focus-visible,
