@@ -237,7 +237,12 @@
                 </button>
                 <div class="row-slider" aria-live="polite">
                   <ul class="slider-list">
-                    <li class="item-slider">
+                    <li
+                      class="item-slider"
+                      id="slide-1"
+                      role="tabpanel"
+                      aria-labelledby="control-1"
+                    >
                       <article class="slide">
                         <div class="content-2">
                           <img
@@ -257,7 +262,12 @@
                         </div>
                       </article>
                     </li>
-                    <li class="item-slider">
+                    <li
+                      class="item-slider"
+                      id="slide-2"
+                      role="tabpanel"
+                      aria-labelledby="control-2"
+                    >
                       <article class="slide">
                         <div class="content-2">
                           <img
@@ -277,7 +287,12 @@
                         </div>
                       </article>
                     </li>
-                    <li class="item-slider">
+                    <li
+                      class="item-slider"
+                      id="slide-3"
+                      role="tabpanel"
+                      aria-labelledby="control-3"
+                    >
                       <article class="slide">
                         <div class="content">
                           <img
@@ -340,22 +355,28 @@
                   class="control"
                   type="button"
                   role="tab"
+                  id="control-1"
                   aria-label="Show Ice coffee"
                   aria-selected="true"
+                  aria-controls="slide-1"
                 ></button>
                 <button
                   class="control-2"
                   type="button"
                   role="tab"
+                  id="control-2"
                   aria-label="Show Caramel Macchiato"
                   aria-selected="false"
+                  aria-controls="slide-2"
                 ></button>
                 <button
                   class="control-2"
                   type="button"
                   role="tab"
+                  id="control-3"
                   aria-label="Show S’mores Frappuccino"
                   aria-selected="false"
+                  aria-controls="slide-3"
                 ></button>
               </div>
             </div>
