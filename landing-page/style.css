@@ -108,7 +108,22 @@
 .d-home .menu-link {
     opacity: 1;
     visibility: visible;
+}
 
+.d-home .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: var(--textprimary);
+  transition: width 0.3s ease;
+  z-index: 0
+}
+
+.d-home .link:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 870px) {
@@ -139,13 +154,6 @@
   letter-spacing:  var(--desktop-action-link-button-letter-spacing);
   line-height:  var(--desktop-action-link-button-line-height);
   white-space: nowrap;
-}
-
-.d-home .line {
-  position: relative;
-  width: 1px;
-  height: 1px;
-  margin-bottom: -1px;
 }
 
 .d-home .coffee-menu {
@@ -832,7 +840,7 @@
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--borderinverse);
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s ease;
 }
 
 .d-home .button-3:hover,
@@ -840,6 +848,14 @@
 .d-home .button-icon-left:hover {
   background-color: var(--backgroundcontainer);
 }
+
+[data-theme="dark"] .d-home .button-3:hover,
+[data-theme="dark"] .d-home .button-icon-right:hover,
+[data-theme="dark"] .d-home .button-icon-left:hover {
+  background-color: var(--dark-bg-container);
+  border-color: var(--dark-bg-container);
+}
+
 .d-home .theme-switch:hover .moon,
 .d-home .button-3:hover .icon,
 .d-home .button-icon-right:hover .img-2,
@@ -988,6 +1004,7 @@
 
 .d-home .button-icon-light:hover {
   background-color: var(--backgroundpage);
+  border-color: var(--backgroundpage);
 }
 
 .d-home .button-icon-light:hover .img-2 {
@@ -1153,6 +1170,20 @@
 }
 
 .d-menu .tab-item[aria-selected="true"] .text-wrapper-7 {
+  color: var(--textinverse);
+}
+
+.d-menu .tab-item:hover {
+  background-color: var(--backgroundcontainer) ;
+  color: var(--textinverse);
+  border-color: var(--backgroundcontainer);
+}
+
+.d-menu .tab-item:hover .icon{
+  background-color: var(--backgroundpage) ;
+}
+
+.d-menu .tab-item:hover .text-wrapper-7 {
   color: var(--textinverse);
 }
 
