@@ -108,7 +108,26 @@
 .d-home .menu-link {
     opacity: 1;
     visibility: visible;
+}
 
+.d-home .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: var(--textprimary);
+  transition: width 0.3s ease;
+  z-index: 0
+}
+
+.d-home address .link::after {
+  background-color:  rgba(225, 212, 201, 1);
+}
+
+.d-home .link:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 870px) {
@@ -139,13 +158,6 @@
   letter-spacing:  var(--desktop-action-link-button-letter-spacing);
   line-height:  var(--desktop-action-link-button-line-height);
   white-space: nowrap;
-}
-
-.d-home .line {
-  position: relative;
-  width: 1px;
-  height: 1px;
-  margin-bottom: -1px;
 }
 
 .d-home .coffee-menu {
@@ -359,6 +371,10 @@
   transition: color 0.3s;
 }
 
+.d-home .button-2:hover .icon-hover {
+    opacity: 1;
+}
+
 .d-home .button-icon-burger {
   width: 44px;
   height: 44px;
@@ -367,7 +383,7 @@
   outline-offset: -1px;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: inline-flex;
   gap: 8px;
   flex-direction: column;
   opacity: 1;
@@ -787,6 +803,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: min(50%, 530px);
   gap: 40px;
   position: relative;
   flex: 1;
@@ -832,7 +849,7 @@
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--borderinverse);
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s ease;
 }
 
 .d-home .button-3:hover,
@@ -840,6 +857,14 @@
 .d-home .button-icon-left:hover {
   background-color: var(--backgroundcontainer);
 }
+
+[data-theme="dark"] .d-home .button-3:hover,
+[data-theme="dark"] .d-home .button-icon-right:hover,
+[data-theme="dark"] .d-home .button-icon-left:hover {
+  background-color: var(--dark-bg-container);
+  border-color: var(--dark-bg-container);
+}
+
 .d-home .theme-switch:hover .moon,
 .d-home .button-3:hover .icon,
 .d-home .button-icon-right:hover .img-2,
@@ -857,6 +882,13 @@
   position: relative;
   width: 36px;
   height: 36px;
+}
+
+.d-home .icon-hover {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .d-home .icon-dark {
@@ -988,6 +1020,7 @@
 
 .d-home .button-icon-light:hover {
   background-color: var(--backgroundpage);
+  border-color: var(--backgroundpage);
 }
 
 .d-home .button-icon-light:hover .img-2 {
@@ -1148,7 +1181,7 @@
   border-color: var(--backgroundcontainer);
 }
 
-.d-menu .tab-item[aria-selected="true"] .icon{
+.d-menu .tab-item[aria-selected="true"] .icon {
   background-color: var(--backgroundpage) ;
 }
 
