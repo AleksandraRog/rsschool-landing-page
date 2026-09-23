@@ -122,6 +122,10 @@
   z-index: 0
 }
 
+.d-home address .link::after {
+  background-color:  rgba(225, 212, 201, 1);
+}
+
 .d-home .link:hover::after {
   width: 100%;
 }
@@ -367,6 +371,10 @@
   transition: color 0.3s;
 }
 
+.d-home .button-2:hover .icon-hover {
+    opacity: 1;
+}
+
 .d-home .button-icon-burger {
   width: 44px;
   height: 44px;
@@ -375,7 +383,7 @@
   outline-offset: -1px;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: inline-flex;
   gap: 8px;
   flex-direction: column;
   opacity: 1;
@@ -875,6 +883,13 @@
   height: 36px;
 }
 
+.d-home .icon-hover {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .d-home .icon-dark {
   position: absolute;
   opacity: 0;
@@ -1165,7 +1180,7 @@
   border-color: var(--backgroundcontainer);
 }
 
-.d-menu .tab-item[aria-selected="true"] .icon{
+.d-menu .tab-item[aria-selected="true"] .icon {
   background-color: var(--backgroundpage) ;
 }
 
