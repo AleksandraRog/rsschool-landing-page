@@ -1156,8 +1156,15 @@
     text-align: center;
 }
 
+.d-menu .offer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 .d-menu .tabs {
-    display: flex;
+    display: inline-flex;
     gap: 16px;
 }
 
