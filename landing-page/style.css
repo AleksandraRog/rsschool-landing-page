@@ -198,6 +198,7 @@
   background-color: var(--background-button-accent-inverse);
 }
 
+
 [data-theme="dark"] .d-home .theme-switch:hover .moon {
   filter: none;
 }
@@ -1287,6 +1288,17 @@
     font-style: var(--desktop-heading-heading-3-font-style);
 }
 
+.d-menu .button-icon-dark.button-refresh {
+  margin: 0 auto;
+  margin-top: 40px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="dark"] .d-menu .refresh {
+  filter: invert(94%) sepia(10%) saturate(386%) hue-rotate(334deg) brightness(94%) contrast(86%);
+}
+
 .d-menu .contacts {
     margin-top: 60px;
 }
@@ -1370,6 +1382,10 @@
   .d-home .mobile-screens {
     width: min(100%, 630px);
     height: auto;
+  }
+
+  .d-menu .button-icon-dark.button-refresh {
+    opacity: 1;
   }
 }
 
