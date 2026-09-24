@@ -1163,9 +1163,9 @@
 }
 
 
-.d-menu .tabs {
-    display: inline-flex;
-    gap: 16px;
+.d-menu .tabs {    display: inline-flex;
+  gap: 16px;
+  margin: 0 auto;
 }
 
 .d-menu .tab-item {
