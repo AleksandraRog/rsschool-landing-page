@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-home d-menu">
+      <header class="header-menu">
+        <div class="d-container container">
+          <div class="header-menu">
+            <a href="index.html" aria-label="Resource Coffee home">
+              <img class="logo" src="images/logo.svg" alt="Resource Coffee" />
+              <img
+                class="logo-dark"
+                src="images/logo_dark.svg"
+                alt="Resource Coffee"
+              />
+            </a>
+            <nav class="nav" aria-label="Primary navigation">
+              <ul class="nav">
+                <li class="div">
+                  <a class="link" href="index.html#favorite-coffee">
+                    <span class="text-wrapper">Favorite coffee</span>
+                  </a>
+                </li>
+                <li class="div">
+                  <a class="link" href="index.html#about">
+                    <span class="text-wrapper">About</span>
+                  </a>
+                </li>
+                <li class="div">
+                  <a class="link" href="/index.html#mobile-app">
+                    <span class="text-wrapper">Mobile app</span>
+                  </a>
+                </li>
+                <li class="div">
+                  <a class="link" href="index.html#contact-us">
+                    <span class="text-wrapper">Contact us</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="coffee-menu" aria-hidden="true"></div>
+            <div class="header-actions">
+              <button
+                class="theme-switch"
+                type="button"
+                aria-label="Switch to dark theme"
+                aria-pressed="false"
+              >
+                <span class="light" aria-hidden="true">
+                  <img class="sun" src="images/sun.svg" alt="" />
+                </span>
+                <span class="dark" aria-hidden="true">
+                  <img class="moon" src="images/moon.svg" alt="" />
+                </span>
+              </button>
+              <div class="menu-item-wrapper">
+                <div class="div menu-link">
+                  <a class="link" href="#">
+                    <span class="text-wrapper">Menu</span>
+                    <img
+                      class="img icon-cup"
+                      src="images/coffee-cup.svg"
+                      alt="Cup"
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="img icon-cup-dark"
+                      src="images/coffee-cup_dark.svg"
+                      alt="Cup"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </div>
+                <div data-state="default" class="button-icon-burger">
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="burger-nav">
+            <nav class="burger-menu">
+              <ul class="burger-menu-list">
+                <li class="favorite-coffee">
+                  <a class="link" href="#favorite-coffee">
+                    <span class="favoritecoffee_span text-wrapper-13"
+                      >Favorite coffee</span
+                    >
+                  </a>
+                </li>
+                <li class="about">
+                  <a class="link" href="#about">
+                    <span class="about_span text-wrapper-13">About</span>
+                  </a>
+                </li>
+                <li class="mobile-app">
+                  <a class="link" href="#mobile-app">
+                    <span class="mobileapp_span text-wrapper-13"
+                      >Mobile app</span
+                    >
+                  </a>
+                </li>
+                <li class="contact-us">
+                  <a class="link" href="#contact-us">
+                    <span class="contactus_span text-wrapper-13"
+                      >Contact us</span
+                    >
+                  </a>
+                </li>
+              </ul>
+              <ul class="burger-menu-list">
+                <li class="menu">
+                  <a class="link" href="#">
+                    <span class="text-wrapper-13">Menu</span>
+                    <div class="coffee-cup">
+                      <img
+                        class="icon-cup"
+                        src="images/coffee-cup.svg"
+                        alt="Cup"
+                        aria-hidden="true"
+                      />
+                      <img
+                        class="icon-cup-dark"
+                        src="images/coffee-cup_dark.svg"
+                        alt="Cup"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </header>
+      <main class="main">
+        <section class="menu" id="menu" aria-labelledby="menu-title">
+          <div class="d-container container-6">
+            <div class="offer-menu">
+              <h1 class="behind-each-of-our" id="menu-title">
+                <span class="span">Behind each of our cups hides an </span>
+                <span class="text-wrapper-2">amazing surprise</span>
+              </h1>
+              <div class="tabs" role="tablist" aria-label="Menu categories">
+                <button
+                  class="tab-item"
+                  type="button"
+                  role="tab"
+                  aria-controls="menu-grid"
+                  aria-selected="false"
+                  data-category="coffee"
+                >
+                  <span class="icon" aria-hidden="true">☕</span>
+                  <span class="text-wrapper-7">Coffee</span>
+                </button>
+                <button
+                  class="tab-item"
+                  type="button"
+                  role="tab"
+                  aria-controls="menu-grid"
+                  aria-selected="false"
+                  data-category="tea"
+                >
+                  <span class="icon" aria-hidden="true">🫖</span>
+                  <span class="text-wrapper-7">Tea</span>
+                </button>
+                <button
+                  class="tab-item"
+                  type="button"
+                  role="tab"
+                  aria-controls="menu-grid"
+                  aria-selected="true"
+                  data-category="dessert"
+                >
+                  <span class="icon" aria-hidden="true">🍰</span>
+                  <span class="text-wrapper-7">Dessert</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu-items">
+          <div
+            class="d-container grid"
+            id="menu-grid"
+            role="tabpanel"
+            aria-label="Menu"
+          >
+            <article class="preview" data-category="coffee">
+              <div class="img-wrapper">
+                <img
+                  class="box-product-item"
+                  src="images/coffee-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content-product-wrapper">
+                <div class="content-product-item">
+                  <h2 class="title">Marble cheesecake</h2>
+                  <p class="description-product-item">
+                    Philadelphia cheese with lemon zest on a light sponge cake
+                    and red currant jam
+                  </p>
+                </div>
+                <p class="price">$3.50</p>
+              </div>
+            </article>
+          </div>
+          <button class="button-icon-dark button-refresh">
+            <img class="refresh" src="images/refresh.svg" alt="" />
+          </button>
+        </section>
+      </main>
+      <footer class="contacts" id="contact-us">
+        <div class="d-container">
+          <div class="container-5">
+            <div class="div-4">
+              <p class="div-2">
+                <span class="text-wrapper-8">Sip, Savor, Smile. </span>
+                <em class="text-wrapper-2">It’s coffee time!</em>
+              </p>
+              <nav class="socials" aria-label="Social media">
+                <a
+                  class="button-icon-light"
+                  href="#"
+                  aria-label="Resource Coffee on Twitter"
+                >
+                  <img class="img-2" src="images/twitter.svg" alt="" />
+                  <img
+                    class="img-2-dark"
+                    src="images/twitter_dark.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="button-icon-light"
+                  href="#"
+                  aria-label="Resource Coffee on Instagram"
+                >
+                  <img class="img-2" src="images/instagram.svg" alt="" />
+                  <img
+                    class="img-2-dark"
+                    src="images/instagram_dark.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="button-icon-light"
+                  href="#"
+                  aria-label="Resource Coffee on Facebook"
+                >
+                  <img class="img-2" src="images/facebook.svg" alt="" />
+                  <img
+                    class="img-2-dark"
+                    src="images/facebook_dark.svg"
+                    alt=""
+                  />
+                </a>
+              </nav>
+            </div>
+            <div class="div-4">
+              <h2 class="text-wrapper-9">Contact us</h2>
+              <address class="contacts-2">
+                <div class="div">
+                  <a
+                    class="link"
+                    href="https://maps.google.com/?q=8558+Green+Rd,+LA"
+                  >
+                    <img
+                      class="img"
+                      src="images/pin-alt.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span class="text-wrapper-10"
+                      >8558 Green Rd.,&nbsp;&nbsp;LA</span
+                    >
+                  </a>
+                </div>
+                <div class="div">
+                  <a class="link" href="tel:+16035550123">
+                    <img
+                      class="img"
+                      src="images/phone.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span class="text-wrapper-10">+1 (603) 555-0123</span>
+                  </a>
+                </div>
+                <div class="div">
+                  <div class="link">
+                    <img
+                      class="img"
+                      src="images/clock.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span class="text-wrapper-10">Mon–Sat: 9:00–23:00</span>
+                  </div>
+                </div>
+              </address>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
