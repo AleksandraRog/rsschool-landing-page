@@ -1,3 +1,4 @@
+import BurgerMenu from "./BurgerMenu";
 import { delay, PAGE_SIZE_768, withLock } from "./config";
 import MenuModel from "./MenuModel";
 import { renderМоdalCart } from "./ModalCartUI";
@@ -9,6 +10,11 @@ const darkButton = document.querySelector(".dark");
 const grid = document.querySelector(".grid");
 const itemPreview = grid.querySelector(".preview");
 const refreshButton = document.querySelector(".button-refresh");
+
+const burgerButton = document.querySelector(".button-icon-burger");
+const burgerAcide = document.querySelector(".burger-nav");
+
+const burgerMenu = new BurgerMenu(burgerButton, burgerAcide);
 
 const createImage = (src) =>
   new Promise((res, rej) => {

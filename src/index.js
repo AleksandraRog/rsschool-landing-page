@@ -1,3 +1,4 @@
+import BurgerMenu from "./BurgerMenu";
 import DataClient from "./DataClient";
 import Slider from "./Slider";
 
@@ -13,6 +14,9 @@ const sliderlist = sliderSection.querySelector(".slider-list");
 const sliderTabs = sliderSection.querySelectorAll(".control");
 const sliderRightTab = sliderSection.querySelector(".button-icon-right");
 const sliderLeftTab = sliderSection.querySelector(".button-icon-left");
+
+const burgerButton = document.querySelector(".button-icon-burger");
+const burgerAcide = document.querySelector(".burger-nav");
 
 async function render() {
   const dataTheme = await dataClient.getItem("theme");
@@ -41,5 +45,7 @@ const slider = new Slider(
   sliderRightTab,
   sliderLeftTab,
 );
+
+const burgerMenu = new BurgerMenu(burgerButton, burgerAcide);
 
 render();
