@@ -52,13 +52,29 @@ class ItemUI {
     return element;
   }
 
+  destroy() {
+    this.inners.forEach((inner) => {
+      if (inner instanceof ItemUI) {
+        inner.destroy();
+      }
+    });
+
+    if (this.uiElement && this.uiElement.parentNode) {
+      this.uiElement.remove();
+    }
+
+    this.uiElement = null;
+    this.inners = [];
+    this.events = {};
+  }
+
   static create(tagAndClasses, configOrInners = {}, possibleInners = []) {
     let targetString = tagAndClasses.trim();
     if (targetString.startsWith(".")) {
       targetString = "div" + targetString;
     }
 
-    const parts = tagAndClasses.split(".");
+    const parts = targetString.split(".");
     const tag = parts[0] || "div";
     const classNames = parts.slice(1);
 
@@ -67,10 +83,13 @@ class ItemUI {
 
     if (Array.isArray(configOrInners)) {
       inners = configOrInners;
-    } else if (typeof configOrInners === "string") {
+    } else if (
+      typeof configOrInners === "string" ||
+      typeof configOrInners === "number"
+    ) {
       config.text = configOrInners;
     } else {
-      config = configOrInners;
+      config = { ...configOrInners };
     }
 
     if (inners.length > 0) config.inners = inners;
@@ -80,3 +99,5 @@ class ItemUI {
     return new ItemUI(config);
   }
 }
+
+export default ItemUI;
