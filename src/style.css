@@ -1251,6 +1251,13 @@
   color: var(--textinverse);
 }
 
+.d-menu .tab-size:has(input:checked) .icon.text-wrapper-7,
+.d-menu .tab-additive:has(input:checked) .icon.text-wrapper-7,
+.d-menu .tab-size:hover .icon.text-wrapper-7,
+.d-menu .tab-additive:hover .icon.text-wrapper-7 {
+  color: var(--textprimary);
+}
+
 .d-menu .tab-item:hover {
   background-color: var(--backgroundcontainer) ;
   color: var(--textinverse);
@@ -1378,9 +1385,11 @@
 	align-items: center;
 	background-color: var(--backgroundpage);
 	padding: 16px;
+	gap: 20px;
 	border-radius: 40px;
 	overflow: auto;
 	border: none;
+	transition: width 0.3s ease;
 }
 
 .d-menu .modal-cart::backdrop {
@@ -1399,6 +1408,18 @@ body:has(dialog[open]) {
   width: 310px;
   align-self: start;
   flex: 0 0 auto;
+  opacity: 1;
+  transition: opacity 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+@media (max-width: 726px) {
+  .d-menu .preview-box {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
 }
 
 .d-menu .preview-img-wrapper {
@@ -1419,8 +1440,7 @@ body:has(dialog[open]) {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	flex-grow: 1;
-	padding-left: 20px;
+	flex: 1 1 260px;
 }
 
 .d-menu .additives,
@@ -1461,10 +1481,28 @@ body:has(dialog[open]) {
   border-top: 1px solid var(--borderprimary);
 }
 
-.d-menu .modal-close-button2 {
-	display: flex;
+.d-menu .alert-info-cost {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--desktop-body-caption-font-family);
+  font-weight: var(--desktop-body-caption-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-body-caption-font-size);
+  letter-spacing: var(--desktop-body-caption-letter-spacing);
+  line-height: var(--desktop-body-caption-line-height);
+  font-style: var(--desktop-body-caption-font-style);
+  transition: color 0.3s;
+}
+
+.d-menu .modal-close-button {
+	display: inline-flex;
+	width: 100%;
+	align-content: center;
+  justify-content: center;
 	padding: 9px 77px;
 	border-radius: 100px;
+  background-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -1642,5 +1680,9 @@ body:has(dialog[open]) {
   .d-home .mobile-screens {
     width: min(100%, 630px);
     height: auto;
+  }
+
+  .d-menu .modal-cart {
+    width: min(800px, calc(100% - 40px));
   }
 }
