@@ -16,6 +16,10 @@ export function renderМоdalCart(targetCart, updatePrice) {
             modalComponent.destroy();
           }
         },
+        cancel: (event) => {
+          event.preventDefault();
+          modalComponent.destroy();
+        },
       },
     },
     [

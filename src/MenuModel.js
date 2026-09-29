@@ -14,8 +14,8 @@ class MenuModel {
     this.dataClient = new DataClient();
 
     const defaultState = {
-      currentCategory: [], // Сюда будет прилетать массив карточек для полной перезагрузки
-      addCarts: [], // Сюда — порция карточек для пагинации
+      currentCategory: [],
+      addCarts: [],
       modal: null,
       theme: false,
       calcPrice: 0,
@@ -81,6 +81,7 @@ class MenuModel {
    */
   set pageSize(size) {
     if (this._pageSize === size) return;
+
     const oldPageSize = this._pageSize;
     this._pageSize = size;
 
@@ -98,14 +99,15 @@ class MenuModel {
     const fp = this._products.filter(
       (product) => product.category === this._category,
     );
-
     if (this._pageSize) {
       const newFirst = this._currentPage * pageSize;
       const newFinish = newFirst + pageSize;
       const nextPortion = fp.slice(newFirst, Math.min(newFinish, fp.length));
       this._state.addCarts = {
-        items: nextPortion,
-        finish: fp.length <= newFinish,
+        data: {
+          items: nextPortion,
+          finish: fp.length <= newFinish,
+        },
       };
       this._currentPage += 1;
     } else {
@@ -151,7 +153,7 @@ class MenuModel {
 
   subscribe(reducerFunction) {
     this.listener = reducerFunction;
-    this.init().then(() => console.log("hi"));
+    this.init().then(() => console.log(""));
   }
 }
 

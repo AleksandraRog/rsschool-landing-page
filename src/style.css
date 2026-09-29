@@ -1200,6 +1200,7 @@
 .d-menu .offer-menu {
   display: flex;
   flex-direction: column;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -1225,22 +1226,32 @@
     transition: border-color 0.3s;
 }
 
-.d-menu .tab-size:has(input:checked),
-.d-menu .tab-additive:has(input:checked),
-.d-menu .tab-size:hover,
-.d-menu .tab-additive:hover,
+
 .d-menu .tab-item[aria-selected="true"] {
   background-color: var(--backgroundcontainer) ;
   color: var(--textinverse);
   border-color: var(--backgroundcontainer);
 }
 
+.d-menu .tab-size:has(input:checked),
+.d-menu .tab-additive:has(input:checked),
+.d-menu .tab-size:hover,
+.d-menu .tab-additive:hover {
+  background-color: var(--background-modalcontrol) ;
+  color: var(--textinverse);
+  border-color: var(--backgroundcontainer);
+}
+
+
+.d-menu .tab-item[aria-selected="true"] .icon {
+  background-color: var(--backgroundpage) ;
+}
+
 .d-menu .tab-size:has(input:checked) .icon,
 .d-menu .tab-additive:has(input:checked) .icon,
 .d-menu .tab-size:hover .icon,
-.d-menu .tab-additive:hover .icon,
-.d-menu .tab-item[aria-selected="true"] .icon {
-  background-color: var(--backgroundpage) ;
+.d-menu .tab-additive:hover .icon {
+  background-color: var(--backgroundcontainer);
 }
 
 .d-menu .tab-size:has(input:checked) .text-wrapper-7,
@@ -1383,7 +1394,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	background-color: var(--backgroundpage);
+	background-color: var(--background-modal);
 	padding: 16px;
 	gap: 20px;
 	border-radius: 40px;
@@ -1393,8 +1404,8 @@
 }
 
 .d-menu .modal-cart::backdrop {
-  background-color: #403F3D;
-  backdrop-filter: blur(5px);
+  background-color: var(--backgroundoverlay);
+  /*backdrop-filter: blur(5px);*/
 }
 
 body:has(dialog[open]) {

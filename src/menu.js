@@ -25,9 +25,6 @@ const createImage = (src) =>
   });
 
 const menuModel = new MenuModel();
-if (mediaQuery.matches) {
-  menuModel.pageSize = PAGE_SIZE_768;
-}
 
 const updatePrice = () => {
   let selectAdditives = [];
@@ -41,6 +38,10 @@ const updatePrice = () => {
 };
 
 menuModel.subscribe(stateReducer);
+
+if (mediaQuery.matches) {
+  menuModel.pageSize = PAGE_SIZE_768;
+}
 
 const tabsContainer = document.querySelector(".tabs");
 
