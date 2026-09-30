@@ -422,8 +422,10 @@
 }
 
 .d-home .burger-nav {
+    display: flex;
     position: absolute;
     width: 100%;
+    height: calc(100vh - 100px);
     left: -100%;
     top: 0;
     z-index: 2;
@@ -436,7 +438,8 @@
 
 .d-home .burger-menu {
   width: 100%;
-  flex: 1 1 0;
+  height: 100%;
+  flex: 1 1 auto;
   padding:60px 40px;
   background: var(--backgroundpage);
   flex-direction: column;
@@ -449,6 +452,7 @@
 .d-home .burger-menu-list {
   align-self: stretch;
   flex-direction: column;
+  justify-content: space-between;
   justify-content: flex-start;
   align-items: center;
   gap: 60px;
