@@ -1389,7 +1389,6 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 	background-color: var(--background-modal);
-	/*gap: 20px;*/
 	border-radius: 40px;
 	overflow: auto;
 	border: none;
@@ -1397,10 +1396,6 @@
 	transition: width 0.3s ease;
 
 }
-
-/*.d-menu .wr-modal {
-  padding: 16px;
-}*/
 
 .d-menu .modal-cart::backdrop {
   background-color: var(--backgroundoverlay);
@@ -1427,9 +1422,6 @@ body:has(dialog[open]) {
 
 @media (max-width: 726px) {
 
-  /*.d-menu .modal-cart {*/
-    /*gap: 0;*/
-  /*}*/
   .d-menu .preview-box {
     opacity: 0;
     height: 0;
