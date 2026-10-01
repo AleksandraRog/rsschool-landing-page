@@ -53,6 +53,7 @@ class MenuModel {
   get currentCategory() {
     return this._category;
   }
+
   getFilterProduct(category) {
     this._category = category;
     this._currentPage = 0;

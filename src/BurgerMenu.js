@@ -20,6 +20,9 @@ class BurgerMenu {
 
     this.onScreenChangeHandler = this.handleScreenChange.bind(this);
     this.mediaQuery.addEventListener("change", this.onScreenChangeHandler);
+
+    this.onCancelHandler = this.handleCancel.bind(this);
+    document.addEventListener("keydown", this.onCancelHandler);
   }
 
   handleBurgerButton() {
@@ -44,9 +47,17 @@ class BurgerMenu {
     this.handleBurgerButton();
   }
 
+  handleCancel(event) {
+    if (event.key !== "Escape") return;
+    const isOpen = this.asidePanel.classList.contains("active");
+    if (isOpen) {
+      this.handleBurgerButton();
+    }
+  }
+
   destroy() {
     this.burgerButton.removeEventListener("click", this.onClickBurgerButton);
-    this.asidePanel.removeEventListener("click", this.onPanelClickHandler);
+    this.asidePanel.removeEventListener("click", this.onClickNavLink);
     this.mediaQuery.removeEventListener("change", this.onScreenChangeHandler);
     document.body.style.overflow = "";
   }

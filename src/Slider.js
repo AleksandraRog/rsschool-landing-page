@@ -14,6 +14,7 @@ class Slider {
     this.rightTab = rightTab;
     this.leftTab = leftTab;
     this.slideWidth = 0;
+    this.currentIndex = 0;
     this.init();
   }
 
@@ -31,6 +32,7 @@ class Slider {
 
     this.bindEvents();
     this.initObserver();
+    this.initResizeObserver();
   }
 
   createClones() {
@@ -45,7 +47,23 @@ class Slider {
   }
 
   updateDimensions() {
+    let oldWidth = this.slideWidth;
     this.slideWidth = this.wrapper.offsetWidth;
+
+    if (!oldWidth) {
+      return;
+    }
+
+    const diff = this.slideWidth - oldWidth;
+    this.listContainer.style.scrollBehavior = "auto";
+    this.listContainer.style.scrollSnapType = "none";
+
+    this.listContainer.scrollLeft += diff * this.currentIndex;
+
+    requestAnimationFrame(() => {
+      this.listContainer.style.scrollBehavior = "smooth";
+      this.listContainer.style.scrollSnapType = "x mandatory";
+    });
   }
 
   jumpTo(position) {
@@ -65,10 +83,10 @@ class Slider {
 
   bindEvents() {
     this.onScrollHandler = this.handleScroll.bind(this);
-    this.onResizeHandler = this.updateDimensions.bind(this);
+    // this.onResizeHandler = this.updateDimensions.bind(this);
 
     this.listContainer.addEventListener("scroll", this.onScrollHandler);
-    window.addEventListener("resize", this.onResizeHandler);
+    //window.addEventListener("resize", this.onResizeHandler);
 
     if (this.tabs) {
       this.onTabClickHandler = this.handleTabClick.bind(this);
@@ -151,6 +169,7 @@ class Slider {
           const index = parseInt(entry.target.id.replace(/[^\d]/g, ""), 10);
 
           if (!isNaN(index)) {
+            this.currentIndex = index;
             this.setActiveTab(index);
           }
         }
@@ -160,6 +179,14 @@ class Slider {
     this.listContainer
       .querySelectorAll(".item-slider")
       .forEach((item) => this.observer.observe(item));
+  }
+
+  initResizeObserver() {
+    this.resizeObserver = new ResizeObserver(() => {
+      this.updateDimensions();
+    });
+
+    this.resizeObserver.observe(this.wrapper);
   }
 }
 

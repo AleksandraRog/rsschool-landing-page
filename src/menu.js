@@ -212,7 +212,9 @@ function removeCarts(answer = undefined) {
   previews.reverse();
   if (answer) {
     previews.splice(answer.data * -1);
-    refreshButton.classList.remove("fade-out");
+    if (previews.length > 0) {
+      refreshButton.classList.remove("fade-out");
+    }
   }
 
   previews.forEach(async (card) => {

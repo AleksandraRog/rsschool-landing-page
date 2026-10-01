@@ -71,7 +71,7 @@ export function renderМоdalCart(targetCart, updatePrice) {
             "The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.",
           ),
         ]),
-        $("button.button-3.modal-close-button", {
+        $("button.button-3.modal-close-button.text-wrapper-7", {
           text: "Close",
           events: {
             click: () => modalComponent.destroy(),
